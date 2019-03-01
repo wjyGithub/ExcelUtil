@@ -22,6 +22,7 @@ public class ExportDemo {
 
 3. 获取数据源
 List<ExportDemo> listDemo = ....;
+4. 数据源和文件流进行绑定
 /**
 * arg1: 模板名
 * arg2: 数据源
