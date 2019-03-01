@@ -11,7 +11,7 @@ excel导出
 @Column(index=0): 表明该字段的数据需要放在excel表中的第0列
 用法:
 1. 在resources/template目录下，创建一个导出模板
-导出模板只需要包含字段头部秒速信息即可
+导出模板只需要包含字段头部描述信息即可
 2. 在实体类字段添加注解
 public class ExportDemo {
 
