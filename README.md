@@ -29,4 +29,6 @@ List<ExportDemo> listDemo = ....;
 * arg3: 实体类class
 */
 Workbook workbook = ExportHelper.workbookBuild("ExportDemoTemplate.xlsx", listDemo, ExportDemo.class);
+5. 写入响应流中，并返回给前端
+ResponseUtil.writeToResponse(response,workbook,"demo.xlsx");
 ```
