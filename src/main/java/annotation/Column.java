@@ -12,12 +12,11 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface column {
+public @interface Column {
 
     /**
-     * 指定该字段和excel中第几列映射
+     * 标记位于excel中的第几列
      */
     int index();
-
 
 }
