@@ -13,8 +13,8 @@
 ===============================================================================
 导入设计思想:  
 ![excel导入设计思想图](https://github.com/wjyGithub/ExcelUtil/blob/master/src/main/resources/images/excel%E5%AF%BC%E5%85%A5%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3.png)  
-如图所示,该EXCEL导入工具的主要设计思想是,将业务的处理逻辑和excel的导入操作分离开来,抽离出一个方便使用的excel导入工具  
-使开发人员可以无需关注excel的导入细节,专注业务逻辑的处理
+如图所示,该EXCEL导入工具的主要设计思想是,将业务的处理逻辑和excel的导入操作分离开来,抽离出一个方便使用的
+excel导入工具使开发人员可以无需关注excel的导入细节,专注业务逻辑的处理
 
 excel导入
 ```text
