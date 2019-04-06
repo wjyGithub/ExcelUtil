@@ -19,4 +19,12 @@ public @interface Column {
      */
     int index();
 
+
+    /**
+     * 字段类型
+     * 该字段主要用于导入时使用,导出时不需要使用该字段
+     * @return
+     */
+    Class<?> type() default String.class;
+
 }

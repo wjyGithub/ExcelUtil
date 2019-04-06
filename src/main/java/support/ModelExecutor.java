@@ -19,7 +19,7 @@ public class ModelExecutor {
      * @return 列号和字段元信息映射  key:列号  value: 字段元信息
      */
     public static Map<Integer,Field> obtainModelDesc(Class<?> cls) {
-        Map<Integer,Field> map = new TreeMap<Integer, Field>();
+        Map<Integer,Field> map = new TreeMap<>();
         if(cls == null) {
             throw new IllegalArgumentException("类名不能为空");
         }
