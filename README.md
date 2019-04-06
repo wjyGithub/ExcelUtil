@@ -1,8 +1,8 @@
 # ExcelUtil
 对POI框架的封装，用于快速开发Excel导入导出
 
+说明
 ```text
-说明:
 导出（导入时，type为无用字段）:
 @Column(index=0,type=String.class): 表明该字段的数据需要放在excel表中的第0列
 导入
@@ -10,12 +10,13 @@
                                     将excel中该列的数据转为指定的数据类型
 ```
 
+===============================================================================
 导入设计思想:  
-![excel导入设计思想图](https://github.com/wjyGithub/ExcelUtil/blob/master/src/main/resources/images/excel%E5%AF%BC%E5%85%A5%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3.png)
+![excel导入设计思想图](https://github.com/wjyGithub/ExcelUtil/blob/master/src/main/resources/images/excel%E5%AF%BC%E5%85%A5%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3.png)  
 如图所示,该EXCEL导入工具的主要设计思想是,将业务的处理逻辑和excel的导入操作分离开来,抽离出一个方便使用的excel导入工具  
 使开发人员可以无需关注excel的导入细节,专注业务逻辑的处理
 
-excel导入使用方式
+excel导入
 ```text
 1. 在实体类的字段上,添加该注解
 public class ImportDemo {
@@ -37,10 +38,10 @@ public void import(MultipartFile file) {
     List<ImportDemo> importDemos = ImportHelper.toPojo(file,ImportDemo.class);
 }
 ```
-
+===========================================================================
 
 导出设计思想:  
-![excel导出设计思想图](https://github.com/wjyGithub/ExcelUtil/blob/master/src/main/resources/images/excel%E5%AF%BC%E5%87%BA%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3.png)
+![excel导出设计思想图](https://github.com/wjyGithub/ExcelUtil/blob/master/src/main/resources/images/excel%E5%AF%BC%E5%87%BA%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3.png)  
 如图所示,该EXCEL导出工具的主要设计思想是,将数据流和文件流之间的映射进行解耦,开发者只需关注数据流的获取,
 而无需了解数据和文件流之间的转换关系,方便用户的开发
 的映射
